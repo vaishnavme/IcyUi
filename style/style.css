@@ -85,7 +85,7 @@ section.wrapper {
     color: var(--white);
 }
 main {
-    max-width: 80%;
+    max-width: 90%;
     margin-top: 0.5rem;
     margin-left: 300px;
     justify-self: center;
