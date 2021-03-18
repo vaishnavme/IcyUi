@@ -1,9 +1,9 @@
 @import "utility.css";
 :root {
-    --primary: #2563EB;
-    --success: #17d336;
-    --warning: #ff6016;
-    --danger: #ff3d2b;
+    --primary: #007bff;
+    --success: #28a745;
+    --warning: #ffc107;
+    --danger: #dc3545;
 
     --primary-light: #BFDBFE;
     --success-light: #A7F3D0;
@@ -28,9 +28,9 @@ body {
 }
 code {
     font-family: monospace;
-    font-size: 18px;
-    background-color: #e4e4e4;
-    padding: 0.2rem;
+    font-size: 16px;
+    color: #e83e8c;
+    word-break: break-word;
 }
 /*=================================
 =============Page Style============
@@ -91,7 +91,6 @@ main {
     justify-self: center;
     align-self: center;
 }
-
 /* Responsive style Page */
 @media screen and (max-width: 768px) {
     #sidebarCollapse {
@@ -197,6 +196,7 @@ main {
 =================*/
 button {
     cursor: pointer;
+    margin: 0.25rem;
 }
 .btn {
     cursor: pointer;
@@ -215,18 +215,22 @@ button {
 .outline-primary {
     color: var(--primary);
     border: 1px solid var(--primary);
+    background: none;
 }
 .outline-success {
     color: var(--success);
     border: 1px solid var(--success);
+    background: none;
 }
 .outline-warning {
     color: var(--warning);
     border: 1px solid var(--warning);
+    background: none;
 }
 .outline-danger {
     color: var(--danger);
     border: 1px solid var(--danger);
+    background: none;
 }
 /*===============
 ======CARD=======
@@ -296,6 +300,9 @@ ul li{
 .list-decimal li {
     list-style-type: decimal-leading-zero;
 }
+.list-heading {
+    font-weight: 500;
+}
 /*=====================
 ======NAVIGATION=======
 =======================*/
@@ -313,3 +320,130 @@ nav.navbar {
 .navbar .navbar-items li.nav-route{
     display: inline;
 }
+
+/*=====================
+=========INPUT=========
+=======================*/
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 5px !important;
+    border: 1px solid;
+    padding: 0.25rem;
+    margin: 0.5rem 0;
+    width: 50%;
+}
+.form-group {
+    margin: 1rem 0;
+    max-width: 50%;
+}
+.form-field {
+    display: block;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    border: 1px solid;
+    transition: border 0.3s ease;
+}
+
+.form-field:focus {
+    outline: none;
+}
+.form-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.form-group > span, .form-group .form-field {
+    white-space: nowrap;
+    display: block;
+}
+.form-group > span:not(:first-child):not(:last-child), .form-group .form-field:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+.form-group > span:first-child, .form-group .form-field:first-child {
+    border-radius: 6px 0 0 6px;
+}
+.form-group > span:last-child, .form-group .form-field:last-child {
+    border-radius: 0 6px 6px 0;
+}
+.form-group > span:not(:first-child), .form-group .form-field:not(:first-child) {
+    margin-left: -1px;
+}
+.form-group .form-field {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.form-group > span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px; 
+    border: 1px solid;
+}
+/*===============
+======Modal=======
+=================*/
+.modal-window {
+    position: fixed;
+    background-color: #ffffff40;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-window > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: rgb(253, 253, 253);
+}
+.modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+}
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+.modal-close:hover {
+    color: black;
+}
+
+.modal-window > div {
+    border-radius: 1rem;
+}
+.modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+
