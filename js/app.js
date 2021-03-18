@@ -9,3 +9,5 @@ function toggleSideBar() {
 }
 
 toggleButton.addEventListener("click", toggleSideBar)
+
+
