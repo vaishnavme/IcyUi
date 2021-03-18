@@ -91,6 +91,9 @@ main {
     justify-self: center;
     align-self: center;
 }
+.section__header {
+    color: #866ec7;
+}
 /* Responsive style Page */
 @media screen and (max-width: 768px) {
     #sidebarCollapse {
