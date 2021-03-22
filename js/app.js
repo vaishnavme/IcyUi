@@ -1,13 +1,7 @@
-const toggleButton = document.querySelector("#sidebarCollapse")
-const customMenu = document.querySelector(".custom-menu")
+const toggleButton = document.getElementById("toggle-button");
+const toggleContent = document.getElementById("sidebar-content");
 
-const sidebar = document.querySelector("#sidebar");
-
-function toggleSideBar() {
-    sidebar.classList.toggle("active")
-    customMenu.classList.toggle("right-move")
-}
-
-toggleButton.addEventListener("click", toggleSideBar)
-
-
+toggleButton.addEventListener("click", () => {
+	document.body.classList.toggle("active");
+	toggleContent.classList.toggle("active");
+});
