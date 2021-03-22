@@ -134,7 +134,7 @@
     padding-bottom: 2rem;
 }
 /*==============================================
-=====================Heading H==================
+=====================Typography==================
 ================================================*/
 h1, .h1 {
     font-size: 2.5rem;
@@ -160,7 +160,6 @@ h6, .h6 {
     font-size: 1rem;
     font-weight: 500;
 }
-
 a {
     margin: 0.25rem;
     text-decoration: none;
@@ -193,7 +192,7 @@ a {
     width: 100%;
 }
 /*==============================================
-=====================Flex=======================
+=====================Flex & Block===============
 ================================================*/
 
 .d-flex {
@@ -205,6 +204,36 @@ a {
 .row {
     flex-direction: row;
 }
-.justify-content-start {
-    justify-content: flex-start;
+.flex-justify-start {
+    justify-content: start;
+}
+.flex-justify-end {
+    justify-content: flex-end;
+}
+.flex-justify-center {
+    justify-content: center;
+}
+.flex-align-center {
+    align-items: center;
+}
+.flex-justify-space-between {
+    justify-content: space-between;
+}
+.flex-justify-space-around {
+    justify-content: space-around;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+.text-center {
+    text-align: center;
 }
