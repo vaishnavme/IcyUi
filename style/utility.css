@@ -1,3 +1,48 @@
+/*=======================================
+=================Utility Colors============
+=========================================*/
+:root {
+    /* Varients */
+    --primary: #007bff;
+    --success: #28a745;
+    --warning: #ffc107;
+    --danger: #dc3545;
+
+    --primary-light: #BFDBFE;
+    --success-light: #A7F3D0;
+    --warning-light: #FDE68A;
+    --danger-light: #FEE2E2;
+
+    --white: #ffffff;
+}
+.f-info, .f-info a {
+    color: var(--primary);
+}
+.f-success,.f-success a {
+    color: var(--success);
+}
+.f-warning, .f-warning a {
+    color: var(--warning);
+}
+.f-danger, .f-danger a {
+    color: var(--danger);
+}
+.bg-info {
+    color: var(--white);
+    background-color: var(--primary);
+}
+.bg-success {
+    color: var(--white);
+    background-color: var(--success);
+}
+.bg-warning {
+    color: var(--white);
+    background-color: var(--warning);
+}
+.bg-danger {
+    color: var(--white);
+    background-color: var(--danger);
+}
 /*==============================================
 =====================MARGIN==================
 ================================================*/
@@ -236,4 +281,19 @@ a {
 }
 .text-center {
     text-align: center;
+}
+
+/*==============================================
+=====================Elements===================
+================================================*/
+ul li {
+    list-style: none;
+    line-height: 1.8rem;
+}
+button {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    outline: none;
+    cursor: pointer;
 }
