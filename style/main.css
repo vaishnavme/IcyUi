@@ -72,6 +72,11 @@ h1 {
 .content {
 	padding: 1.5em;
 }
+@media only screen and (max-width: 668px) {
+	.content {
+		padding: 0;
+	}
+}
 @media only screen and (min-width: 1024px) {
 	body.active {
 		overflow: initial;
@@ -89,14 +94,12 @@ h1 {
 	.toggle-button {
 		display: none;
 	}
-	.content {
-		padding: 3em;
-	}
 	.sidebar {
 		display: grid;
 		grid-template-rows: auto 1fr;
 		padding: 3em;
 		border-right: 1px solid #e1e1e1;
+		border-radius: 0.5rem;
 		border-bottom: 0;
 		height: 100vh;
 	}
@@ -109,6 +112,7 @@ h1 {
 		width: 50vw;
 		background-color: #ffffff;
 		z-index: -1;
+		border-radius: 0.5rem;
 	}
 }
 .component {
@@ -116,7 +120,7 @@ h1 {
 	min-height: 80vh;
 	border-radius: 0.5rem;
 	background-color: var(--white);
-	margin: 1rem auto;
+	margin: auto auto 1.6rem;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .code__container {
