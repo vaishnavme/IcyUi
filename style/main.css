@@ -56,6 +56,9 @@ h1 {
 	overflow-y: auto;
 	visibility: visible;
 }
+.sidebar-content li a.current {
+	color: var(--primary);
+}
 .nav-list {
 	list-style: none;
 	padding-left: 0;
