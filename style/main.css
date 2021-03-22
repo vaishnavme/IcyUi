@@ -142,7 +142,7 @@ code {
 	width: 100px;
 	height: 50px;
 	border-radius: 5px;
-	margin: 1.5rem;
+	margin: 1rem;
 }
 /*=======================================
 =================Buttons==================
@@ -188,9 +188,8 @@ code {
 =========================================*/
 .simple-list {
 	border-radius: 1rem;
-	display: flex;
-	flex-direction: column;
 	padding: 0.5rem;
+	width: fit-content;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .simple-list li:not(:last-child) {
