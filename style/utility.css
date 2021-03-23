@@ -8,12 +8,13 @@
     --warning: #ffc107;
     --danger: #dc3545;
 
-    --primary-light: #BFDBFE;
+    --primary-light: #f1f7ff;
     --success-light: #A7F3D0;
     --warning-light: #FDE68A;
     --danger-light: #FEE2E2;
 
     --white: #ffffff;
+    --body-color: #f0f8ff;
 }
 .f-info, .f-info a {
     color: var(--primary);
