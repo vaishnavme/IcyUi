@@ -77,6 +77,9 @@
 							<li>
 								<a href="#card" class="nav-link">Card</a>
 							</li>
+							<li>
+								<a href="#navigation" class="nav-link">Navigation</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -447,6 +450,123 @@
 					<!--card-->
 					<section id="card" class="component">
 						<div class="h2 section__heading">Card</div>
+						<div class="body__info">
+							<p>Used to display information to users, with button to trigger actions. These are very versatile and often found in eCommerce websites and blogs.</p>
+						</div>
+						<div class="body__example mb-2">
+							<h5 class="mt-3 mb-3">@Blog Card with image</h5>
+							<div class="card">
+								<img class="card-img" loading="lazy" src="images/card-header.jpg" alt="card">
+								<div class="card-body">
+									<div class="card-title">Card Title</div>
+									<div class="card-subtitle">Card Subtitle</div>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta praesentium quam temporibus enim quae!</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-primary">Read more</button>
+								</div>
+							</div>
+								
+							<h5 class="mt-3 mb-3">@Card with text only</h5>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title">Card Title</div>
+									<div class="card-subtitle">Card Subtitle</div>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eligendi vitae aut? Quidem praesentium eius molestiae. Cumque facere neque necessitatibus, sit suscipit praesentium. Rerum odit, quisquam iusto placeat ad ab.</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-primary">Read more</button>
+								</div>
+							</div>
+						</div>
+						<div class="body__info">
+<pre class="code__container"><code class="html">
+	// Blog card with image
+	&lt;div class="card"&gt;
+		&lt;img class="card-img" loading="lazy" src="images/card-header.jpg" alt="card"&gt;
+		&lt;div class="card-body"&gt;
+			&lt;div class="card-title"&gt;Card Title&lt;/div&gt;
+			&lt;div class="card-subtitle"&gt;Card Subtitle&lt;/div&gt;
+			&lt;p class="card-text"&gt;Lorem ipsum dolor sit amet 
+				consectetur adipisicing elit. Repellendus dicta 
+				praesentium quam temporibus enim quae!&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="card-footer"&gt;
+			&lt;button class="btn btn-primary"&gt;Read more&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	// Card with only text
+	&lt;div class="card"&gt;
+		&lt;div class="card-body"&gt;
+			&lt;div class="card-title"&gt;Card Title&lt;/div&gt;
+			&lt;div class="card-subtitle"&gt;Card Subtitle&lt;/div&gt;
+			&lt;p class="card-text"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Aliquam eligendi vitae aut? Quidem praesentium eius molestiae. 
+				Cumque facere neque necessitatibus, sit suscipit praesentium. 
+				Rerum odit, quisquam iusto placeat ad ab.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="card-footer"&gt;
+			&lt;button class="btn btn-primary"&gt;Read more&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+</code></pre>
+						</div>
+					</section>
+
+					<!--navigation-->
+					<section id="navigation" class="component">
+						<div class="h2 section__heading">Navigation</div>
+
+						<div class="body__example mt-2 mb-2">
+							<h5 class="mt-2 mb-2">@Simple Navigation</h5>
+							<nav class="navbar">
+								<div class="navbar-brand">Brand</div>
+								<ul class="nav-items">
+									<li><a href="#" class="nav-link">Home</a></li>
+									<li><a href="#" class="nav-link">Blog</a></li>
+									<li><a href="#" class="nav-link">Contact</a></li>
+								</ul>
+							</nav>
+
+							<h5 class="mt-3 mb-3">@Navigation with Button</h5>
+
+							<nav class="navbar">
+								<div class="navbar-brand">Brand</div>
+								<ul class="nav-items">
+									<li><a href="#" class="nav-link">Home</a></li>
+									<li><a href="#" class="nav-link">Blog</a></li>
+									<li><a href="#" class="nav-link">Collection</a></li>
+								</ul>
+								<button class="btn btn-primary">Download</button>
+							</nav>
+						</div>
+						<div class="body__info">
+<pre class="code__container"><code class="html">
+	// Simple Navigation
+	&lt;nav class="navbar"&gt;
+		&lt;div class="navbar-brand"&gt;Brand&lt;/div&gt;
+		&lt;ul class="nav-items"&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+
+	// Navigation with Button
+	&lt;nav class="navbar"&gt;
+		&lt;div class="navbar-brand"&gt;Brand&lt;/div&gt;
+		&lt;ul class="nav-items"&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Collection&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;button class="btn btn-primary"&gt;Download&lt;/button&gt;
+	&lt;/nav&gt;
+
+</code></pre>
+						</div>
 					</section>
 				</main>
 			</div>
