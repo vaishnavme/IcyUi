@@ -94,7 +94,7 @@ body.active {
 	.sidebar {
 		display: grid;
 		grid-template-rows: auto 1fr;
-		padding: 3em;
+		padding: 2rem;
 		border-right: 1px solid #e1e1e1;
 		border-radius: 0.5rem;
 		border-bottom: 0;
