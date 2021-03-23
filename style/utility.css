@@ -5,13 +5,13 @@
     /* Varients */
     --primary: #007bff;
     --success: #28a745;
-    --warning: #ffc107;
+    --warning: #ffa807;
     --danger: #dc3545;
 
     --primary-light: #f1f7ff;
-    --success-light: #A7F3D0;
-    --warning-light: #FDE68A;
-    --danger-light: #FEE2E2;
+    --success-light: #d9fcec;
+    --warning-light: #fff8dd;
+    --danger-light: #ffe8e8;
 
     --white: #ffffff;
     --body-color: #f0f8ff;
