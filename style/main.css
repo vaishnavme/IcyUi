@@ -198,7 +198,7 @@ code {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .simple-list li:not(:last-child) {
-    border-bottom: 1px solid #dee3ea;
+    border-bottom: 1px solid var(--border);
 } 
 .list-bullet li {
     list-style-type: disc;
@@ -316,4 +316,47 @@ code {
 .label-cart {
 	color: var(--white);
 	background-color: var(--warning);
+}
+/*=======================================
+=================Card==================
+=========================================*/
+.card {
+	--card-width: 18rem;
+	width: var(--card-width);
+	border: 0.5px solid var(--border);
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.card-body {
+	padding: 0.5rem;
+}
+.card-title {
+	font-size: 2rem;
+	font-weight: 600;
+}
+.card-subtitle {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--gray);
+}
+.card-img {
+	width: 100%;
+	max-width: var(--card-width);
+	height: auto;
+}
+/*=======================================
+=================Navbar==================
+=========================================*/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.navbar-brand {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+.navbar .nav-items li {
+	display: inline-block;
 }
