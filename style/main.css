@@ -235,3 +235,32 @@ code {
 	width: 6rem;
 	height: auto;
 }
+/*=======================================
+=================Alert==================
+=========================================*/
+.alert {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	width: fit-content;
+}
+.alert-icon {
+	margin-right: 0.5rem;
+}
+.alert-primary {
+	color: var(--primary);
+	background-color: var(--primary-light);
+}
+.alert-success {
+	color: var(--success);
+	background-color: var(--success-light);
+}
+.alert-warning {
+	color: var(--warning);
+	background-color: var(--warning-light);
+}
+.alert-danger {
+	color: var(--danger);
+	background-color: var(--danger-light);
+}
