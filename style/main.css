@@ -267,6 +267,7 @@ code {
 /*=======================================
 =================Badge==================
 =========================================*/
+/* Badge Avatar */
 .badge-av {
 	position: relative;
 	width: fit-content;
@@ -294,4 +295,28 @@ code {
 }
 .status-offline {
 	background-color: var(--danger);
+}
+/* Badge Icons */
+.badge-icon {
+	position: relative;
+	width: fit-content;
+}
+.label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	border-radius: 50%;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+.label-bell {
+	color: var(--white);
+	background-color: var(--primary);
+}
+.label-cart {
+	color: var(--white);
+	background-color: var(--warning);
 }
