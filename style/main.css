@@ -69,9 +69,71 @@ body.active {
 .content {
 	padding: 1.5em;
 }
-@media only screen and (max-width: 668px) {
+.component {
+	padding: 1rem;
+	min-height: 80vh;
+	border-radius: 0.5rem;
+	background-color: var(--white);
+	margin: auto auto 1.6rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.code__container {
+	width: 100%;
+	padding: 0;
+}
+.code__container > code {
+	border-radius: 0.5rem;
+	padding: 0 0 0 0.5rem;
+	line-height: 1.5rem;
+	font-family: 'Poppins', sans-serif;
+}
+code {
+    font-family: monospace;
+    font-size: 16px;
+    color: #e83e8c;
+    word-break: break-word;
+}
+.body__info > p {
+	line-height: 2rem;
+}
+
+::-webkit-scrollbar {
+	width: 20px;
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--border);
+	border-radius: 20px;
+	border: 6px solid transparent;
+	background-clip: content-box;
+}
+#start {
+	text-align: center;
+}
+.page__header {
+	display: block;
+	margin: 5rem auto 1rem;
+}
+input.link__box {
+	width: 30rem;
+	padding: 0.5rem;
+	font-family: inherit;
+	font-size: inherit;
+	border-radius: 0.5rem;
+	border: 3px solid var(--border);
+}
+input.link__box:focus {
+	border-radius: 0.5rem;
+	outline: none;
+}
+@media screen and (max-width: 668px) {
 	.content {
 		padding: 0;
+	}
+	input.link__box {
+		width: 20rem !important;
 	}
 }
 @media only screen and (min-width: 1024px) {
@@ -111,33 +173,6 @@ body.active {
 		z-index: -1;
 		border-radius: 0.5rem;
 	}
-}
-.component {
-	padding: 1rem;
-	min-height: 80vh;
-	border-radius: 0.5rem;
-	background-color: var(--white);
-	margin: auto auto 1.6rem;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-.code__container {
-	width: 100%;
-	padding: 0;
-}
-.code__container > code {
-	border-radius: 0.5rem;
-	padding: 0 0 0 0.5rem;
-	line-height: 1.5rem;
-	font-family: 'Poppins', sans-serif;
-}
-code {
-    font-family: monospace;
-    font-size: 16px;
-    color: #e83e8c;
-    word-break: break-word;
-}
-.body__info > p {
-	line-height: 2rem;
 }
 /*=======================================
 =================Colors==================
