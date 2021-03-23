@@ -264,3 +264,34 @@ code {
 	color: var(--danger);
 	background-color: var(--danger-light);
 }
+/*=======================================
+=================Badge==================
+=========================================*/
+.badge-av {
+	position: relative;
+	width: fit-content;
+}
+.badge-img {
+	border-radius: 50%;
+	width: 4rem;
+	height: 4rem;
+}
+.status {
+	position: absolute;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	bottom: 0.8rem;
+	right: 0.1rem;
+	border-radius: 50%;
+	border: 3px solid var(--white);
+}
+.status-active {
+	background-color: var(--success);
+}
+.status-idl {
+	background-color: var(--warning);
+}
+.status-offline {
+	background-color: var(--danger);
+}
