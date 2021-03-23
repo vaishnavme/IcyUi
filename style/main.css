@@ -395,3 +395,32 @@ input.link__box:focus {
 .navbar .nav-items li {
 	display: inline-block;
 }
+/*=======================================
+=================Modal==================
+=========================================*/
+.modal {
+	position: relative;
+	width: 25rem;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 1rem;
+	border: 1px solid var(--border);
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.modal-title {
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin: 0.5rem auto;
+}
+.modal-body {
+	margin: 1rem auto;
+}
+.modal-body > p {
+	font-size: 18px;
+}
+.close-btn {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+}
