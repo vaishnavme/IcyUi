@@ -14,7 +14,9 @@
     --danger-light: #ffe8e8;
 
     --white: #ffffff;
+    --gray: #474747;
     --body-color: #f0f8ff;
+    --border: #dee3ea;
 }
 .f-info, .f-info a {
     color: var(--primary);
