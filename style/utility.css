@@ -34,17 +34,40 @@
     color: var(--white);
     background-color: var(--primary);
 }
+.bg-info-light {
+    color: var(--white);
+    background-color: var(--primary-light);
+}
 .bg-success {
     color: var(--white);
     background-color: var(--success);
+}
+.bg-success-light {
+    color: var(--white);
+    background-color: var(--success-light);
 }
 .bg-warning {
     color: var(--white);
     background-color: var(--warning);
 }
+.bg-warning-light {
+    color: var(--white);
+    background-color: var(--warning-light);
+}
 .bg-danger {
     color: var(--white);
     background-color: var(--danger);
+}
+.bg-danger-light {
+    color: var(--white);
+    background-color: var(--danger-light);
+}
+.bg-gray {
+    color: var(--white);
+    background-color: var(--gray);
+}
+.bg-border-gray {
+    background-color: var(--border);
 }
 /*==============================================
 =====================MARGIN==================
