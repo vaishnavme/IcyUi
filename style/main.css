@@ -11,7 +11,7 @@
 body {
 	font-family: 'Poppins', sans-serif;
     font-weight: 400;
-	background-color: #f1f2f6;
+	background-color: var(--body-color);
 }
 body.active {
 	overflow: hidden;
@@ -168,6 +168,7 @@ code {
 }
 .btn-secondary {
 	color: var(--primary);
+	background-color: var(--primary-light);
 	border: 2px solid var(--primary);
 }
 .lg {
