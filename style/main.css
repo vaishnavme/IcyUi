@@ -16,9 +16,6 @@ body {
 body.active {
 	overflow: hidden;
 }
-h1 {
-	margin: 0;
-}
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
