@@ -400,7 +400,7 @@ input.link__box:focus {
 =========================================*/
 .modal {
 	position: relative;
-	width: 25rem;
+	max-width: 25rem;
 	padding: 1rem;
 	text-align: center;
 	border-radius: 1rem;
