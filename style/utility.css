@@ -17,6 +17,7 @@
     --gray: #474747;
     --body-color: #f0f8ff;
     --border: #dee3ea;
+    --border-dark: #9db9da;
 }
 .f-info, .f-info a {
     color: var(--primary);
