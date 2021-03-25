@@ -130,6 +130,13 @@ input.link__box:focus {
 	border-radius: 0.5rem;
 	outline: none;
 }
+.about__body {
+	display: flex;
+	justify-content: space-between;
+}
+.about__lead {
+	font-weight: 300;
+}
 @media screen and (max-width: 668px) {
 	.content {
 		padding: 0;
