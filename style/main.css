@@ -363,7 +363,7 @@ input:focus ~ span, textarea:focus ~ span {
 .status-active {
 	background-color: var(--success);
 }
-.status-idl {
+.status-warning {
 	background-color: var(--warning);
 }
 .status-offline {
