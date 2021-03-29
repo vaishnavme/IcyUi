@@ -239,7 +239,6 @@ input.link__box:focus {
 	border-radius: 1rem;
 	padding: 0.5rem;
 	width: fit-content;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .simple-list li:not(:last-child) {
     border-bottom: 1px solid var(--border);
