@@ -383,15 +383,10 @@ input:focus ~ span, textarea:focus ~ span {
 	border-radius: 50%;
 	width: 1.2rem;
 	height: 1.2rem;
-}
-.label-bell {
 	color: var(--white);
-	background-color: var(--primary);
+	background-color: var(--warning) !important;
 }
-.label-cart {
-	color: var(--white);
-	background-color: var(--warning);
-}
+
 /*=======================================
 =================Card==================
 =========================================*/
