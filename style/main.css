@@ -95,19 +95,6 @@ code {
 .body__info > p {
 	line-height: 2rem;
 }
-
-::-webkit-scrollbar {
-	width: 20px;
-}
-::-webkit-scrollbar-track {
-	background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-	background-color: var(--border-dark);
-	border-radius: 20px;
-	border: 6px solid transparent;
-	background-clip: content-box;
-}
 #start {
 	text-align: center;
 }
