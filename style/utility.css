@@ -1,3 +1,75 @@
+/*=======================================
+=================Utility Colors============
+=========================================*/
+:root {
+    /* Varients */
+    --primary: #007bff;
+    --success: #28a745;
+    --warning: #ffa807;
+    --danger: #dc3545;
+
+    --primary-light: #f1f7ff;
+    --success-light: #d9fcec;
+    --warning-light: #fff8dd;
+    --danger-light: #ffe8e8;
+
+    --white: #ffffff;
+    --gray: #474747;
+    --body-color: #f0f8ff;
+    --border: #dee3ea;
+    --border-dark: #9db9da;
+}
+.f-info, .f-info a {
+    color: var(--primary);
+}
+.f-success,.f-success a {
+    color: var(--success);
+}
+.f-warning, .f-warning a {
+    color: var(--warning);
+}
+.f-danger, .f-danger a {
+    color: var(--danger);
+}
+.bg-info {
+    color: var(--white);
+    background-color: var(--primary);
+}
+.bg-info-light {
+    color: var(--white);
+    background-color: var(--primary-light);
+}
+.bg-success {
+    color: var(--white);
+    background-color: var(--success);
+}
+.bg-success-light {
+    color: var(--white);
+    background-color: var(--success-light);
+}
+.bg-warning {
+    color: var(--white);
+    background-color: var(--warning);
+}
+.bg-warning-light {
+    color: var(--white);
+    background-color: var(--warning-light);
+}
+.bg-danger {
+    color: var(--white);
+    background-color: var(--danger);
+}
+.bg-danger-light {
+    color: var(--white);
+    background-color: var(--danger-light);
+}
+.bg-gray {
+    color: var(--white);
+    background-color: var(--gray);
+}
+.bg-border-gray {
+    background-color: var(--border);
+}
 /*==============================================
 =====================MARGIN==================
 ================================================*/
@@ -164,6 +236,12 @@ a {
     margin: 0.25rem;
     text-decoration: none;
 }
+.font-bold {
+    font-weight: 500;
+}
+.font-italic {
+    font-style: italic;
+}
 /*==============================================
 =====================WIDTH==================
 ================================================*/
@@ -236,4 +314,19 @@ a {
 }
 .text-center {
     text-align: center;
+}
+
+/*==============================================
+=====================Elements===================
+================================================*/
+ul li {
+    list-style: none;
+    line-height: 1.8rem;
+}
+button {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    outline: none;
+    cursor: pointer;
 }

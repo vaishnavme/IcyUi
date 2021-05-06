@@ -1,13 +1,26 @@
-const toggleButton = document.querySelector("#sidebarCollapse")
-const customMenu = document.querySelector(".custom-menu")
+// Responsive sidebar
+const toggleButton = document.getElementById("toggle__button");
+const toggleContent = document.getElementById("sidebar__content");
 
-const sidebar = document.querySelector("#sidebar");
+toggleButton.addEventListener("click", () => {
+	document.body.classList.toggle("active");
+	toggleContent.classList.toggle("active");
+});
 
-function toggleSideBar() {
-    sidebar.classList.toggle("active")
-    customMenu.classList.toggle("right-move")
-}
+// Active section link
+let mainNavLinks = document.querySelectorAll("#sidebar__content li a");
+let mainSection = document.querySelectorAll("main section")
 
-toggleButton.addEventListener("click", toggleSideBar)
+window.addEventListener("scroll", event => {
+	let fromTop = window.scrollY;
 
+	mainNavLinks.forEach(link => {
+		let section = document.querySelector(link.hash);
 
+		if(section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+			link.classList.add("active");
+		} else {
+			link.classList.remove("active");
+		}
+	})
+})

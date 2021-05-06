@@ -4,138 +4,178 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Seven Ui</title>
-		<link rel="stylesheet" type="text/css" href="./style/style.css" />
+		<title>Icy Ui | Vanilla CSS Library </title>
+		<!--Meta data-->
+		<meta name="description" content="Set of simple, responsive CSS modules.">
+		<meta name="keywords" content="HTML, CSS, Web Development">
+		<meta name="author" content="Vaishnav Chandurkar">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+		<!--End meta data-->
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.1/styles/night-owl.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="/style/main.css" />
 	</head>
 	<body>
-		<section class="wrapper d-flex">
-			<nav id="sidebar">
-				<div class="custom-menu pt-3">
-					<button type="button" id="sidebarCollapse">
-						<span class="bars"></span>
-						<span class="bars"></span>
-						<span class="bars"></span>
+		<section id="container" class="container">
+			<nav class="sidebar">
+				<div class="sidebar__header">
+					<div class="h2">Icy Ui</div>
+					<button id="toggle__button" class="toggle__button">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-align-left"
+							width="40"
+							height="40"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#000000"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<line x1="4" y1="6" x2="20" y2="6" />
+							<line x1="4" y1="12" x2="14" y2="12" />
+							<line x1="4" y1="18" x2="18" y2="18" />
+						</svg>
 					</button>
 				</div>
-				<div class="sidenav-brand pt-2 pb-2">Seven Ui</div>
-				<ul class="sidenav-items ml-4 pl-1 mb-2">
-					<h5 class="list-heading">Layout</h5>
-					<li class="sidenav-items-link">
-						<a href="#colors">Colors</a>
-					</li>
-				</ul>
-				<ul class="sidenav-items ml-4 pl-1 mb-2">
-					<h5 class="list-heading">Elements</h5>
-					<li class="sidenav-items-link">
-						<a href="#typography">Typography</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#button">Button</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#images">Images</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#list">List</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#input">Input</a>
-					</li>
-				</ul>
-				<ul class="sidenav-items ml-4 pl-1 mb-2">
-					<h5 class="list-heading">Collection</h5>
-					<li class="sidenav-items-link">
-						<a href="#avator">Avator</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#alert">Alert</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#badge">Badge</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#card">Card</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#navigation">Navigation</a>
-					</li>
-					<li class="sidenav-items-link">
-						<a href="#modal">Modal</a>
-					</li>
-				</ul>
+				<div id="sidebar__content" class="sidebar__content">
+					<nav>
+						<ul class="nav__list">
+							<li>
+								<a href="#start" class="nav__link">Getting Started</a>
+							</li>
+							<div class="h5">Layout & Utility</div>
+							<li>
+								<a href="#colors" class="nav__link">Colors</a>
+							</li>
+							<li>
+								<a href="#typography" class="nav__link">Typography</a>
+							</li>
+							<div class="h5">Elements</div>
+							<li>
+								<a href="#button" class="nav__link">Button</a>
+							</li>
+							<li>
+								<a href="#images" class="nav__link">Images</a>
+							</li>
+							<li>
+								<a href="#list" class="nav__link">List</a>
+							</li>
+							<li>
+								<a href="#input" class="nav__link">Input</a>
+							</li>
+							<div class="h5">Collections</div>
+							<li>
+								<a href="#avatar" class="nav__link">Avatar</a>
+							</li>
+							<li>
+								<a href="#alert" class="nav__link">Alert</a>
+							</li>
+							<li>
+								<a href="#badge" class="nav__link">Badge</a>
+							</li>
+							<li>
+								<a href="#card" class="nav__link">Card</a>
+							</li>
+							<li>
+								<a href="#navigation" class="nav__link">Navigation</a>
+							</li>
+							<li>
+								<a href="#modal" class="nav__link">Modal</a>
+							</li>
+							<li>
+								<a href="#about" class="nav__link">About</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</nav>
+			<div class="content">
+				<main>
+					<!--Getting Started-->
+					<section id="start" class="component">
+						<div class="page__header d-flex flex-align-center">
+							<img src="images/logo.svg">
+							<h1>Build Ui Faster</h1>
+						</div>
+						<div class="page__info mb-3">
+							Set of simple, responsive CSS modules.
+						</div>
+						<div class="h4">Getting Started</div>
+						<p class="m-2">Simply add stylesheet link to your project header. <br/>Start Building !</p>
+						<input class="link__box" type="text" readonly value="&lt;link rel='stylesheet type='text/css' href='https://icyui.netlify.app/style/main.css'&gt;">
+					</section>
 
-			<main class="p-2">
-				<!--Start Colors-->
-				<section id="colors" class="component">
-					<div class="section__header mb-2">
-						<h2>Colors</h2>
-					</div>
-					<div class="section__body">
-						<h5 class="mt-3 mb-3">@Background & Font Color</h5>
-						<div class="comp__example d-flex flex-wrap">
-							<div
-								class="color__block bg-primary d-flex flex-align-center text-center mr-2"
-							>
-								Primary Color
+					<!--Colors-->
+					<section id="colors" class="component">
+						<div class="h2 section__heading">Colors</div>
+						<div class="section__body">
+							<h5 class="mt-2 mb-2">@Background and Font Color</h5>
+							<p>Theme Colors</p>
+							<div class="body__example d-flex flex-wrap">
+								<div class="block_w80-h50 bg-info"></div>
+								<div class="block_w80-h50 bg-success"></div>
+								<div class="block_w80-h50 bg-warning"></div>
+								<div class="block_w80-h50 bg-danger"></div>
 							</div>
-							<div
-								class="color__block bg-success d-flex flex-align-center text-center mr-2"
-							>
-								Primary Color
+							<p>Light Shades</p>
+							<div class="body__example d-flex flex-wrap">
+								<div class="block_w80-h50 bg-info-light"></div>
+								<div class="block_w80-h50 bg-success-light"></div>
+								<div class="block_w80-h50 bg-warning-light"></div>
+								<div class="block_w80-h50 bg-danger-light"></div>
 							</div>
-							<div
-								class="color__block bg-warning d-flex flex-align-center text-center mr-2"
-							>
-								Primary Color
+							<p>Base</p>
+							<div class="body__example d-flex flex-wrap">
+								<div class="block_w80-h50 bg-border-gray"></div>
+								<div class="block_w80-h50 bg-gray"></div>
 							</div>
-							<div
-								class="color__block bg-danger d-flex flex-align-center text-center"
-							>
-								Primary Color
+							<div class="body__info">
+								<p>Background Color Class:<br />
+									<code>.bg-primary .bg-success .bg-warning .bg-danger</code></p>
 							</div>
-						</div>
-						<h5 class="mt-3 mb-3">@Font Color</h5>
-						<div class="comp__example d-flex flex-wrap">
-							<ul>
-								<li class="f-primary">Primary Color</li>
-								<li class="f-success">Success Color</li>
-								<li class="f-warning">Warning Color</li>
-								<li class="f-danger">Danger Color</li>
+							
+							<h5 class="mt-2 mb-2">@Link Color</h5>
+							<ul class="mt-1 mb-1">
+								<li class="f-info"><a href="#">Info Color</a></li>
+								<li class="f-success"><a href="#">Success Color</a></li>
+								<li class="f-warning"><a href="#">Warning Color</a></li>
+								<li class="f-danger"><a href="#">Danger Color</a></li>
 							</ul>
+							<div class="body__info">
+								<p>Font & Link Color Class: <br />
+									<code>.f-primary .f-success .f-warning .f-danger</code></p>
+							</div>
 						</div>
-						<div class="comp__info p-2">
-							<ul class="list-bullet">
-								<li>
-									Background Color and Font Color Propery: <br />
-									<code>.bg-primary .bg-success .bg-warning .bg-danger</code>
-								</li>
-								<li>
-									Font Color: <br />
-									<code>.f-primary .f-success .f-warning .f-danger</code>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
+					</section>
 
-				<!--Start Typography-->
-				<section id="typography" class="component">
-					<div class="section__header mb-2">
-						<h2>Typography</h2>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
-							<div>
+					<!--Typography-->
+					<section id="typography" class="component">
+						<div class="h2 section__heading">Typography</div>
+						<div class="section__body mt-2">
+							<div class="body__info mb-2">
+								<p>
+									Typography, including global settings, headings, body text
+								</p>
+								<p>Heading: <code>h1 h2 h3 h4 h5 h6</code> Element tag is used.</p>
+								<p><code>.h1</code> through <code>.h6</code> classes are also
+									available, for when you want to match the font styling of a
+									heading but cannot use the associated HTML element.</p>
+							</div>
+							<div class="body__example">
 								<h1>h1. This is Heading</h1>
 								<br />
 								<h2>h2. This is Heading</h2>
-								<br />
+								<br/>
 								<h3>h3. This is Heading</h3>
 								<br />
 								<h4>h4. This is Heading</h4>
@@ -145,525 +185,515 @@
 								<h6>h6. This is Heading</h6>
 								<br />
 							</div>
-
-							<div class="mt-3">
-								<h5 class="mt-2 mb-2">@Font Style</h5>
-								<br />
-								<p>
-									You can use the mark tag to <mark>highlight</mark> text.
-									<code>.mark</code>
-								</p>
-								<br />
-								<p>
-									<small
-										>This line of text is meant to be treated as fine
-										print.</small
-									>
-									<code>.small</code>
-								</p>
-								<br />
-								<p>
-									<strong>This line rendered as bold text.</strong>
-									<code>.strong</code>
-								</p>
-								<br />
-								<p>
-									<em>This line rendered as italicized text.</em>
-									<code>.em</code>
-								</p>
-								<br />
-							</div>
 						</div>
-						<div class="comp__info">
-							<p>
-								Typography, including global settings, headings, body text
-								<br />To use avator add class to image:
-							</p>
-							<ul class="list-bullet">
-								<li>
-									Heading: <code>h1 h2 h3 h4 h5 h6</code> Element tag is used.
-								</li>
-								<li>
-									<code>.h1</code> through <code>.h6</code> classes are also
-									available, for when you want to match the font styling of a
-									heading but cannot use the associated HTML element.
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
+					</section>
 
-				<!--Start Buttons-->
-				<section id="button" class="component">
-					<div class="section__header mb-2">
-						<h2>Button & Links</h2>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
-							<h5 class="mt-2 mb-2">@Buttons</h5>
-							<div class="mt-2 mb-2">
-								<button class="btn bg-primary" type="button">Primary</button>
-								<button class="btn bg-success" type="button">Success</button>
-								<button class="btn bg-warning" type="button">Warning</button>
-								<button class="btn bg-danger" type="button">Danger</button>
-								<button class="btn" type="button">Standered</button>
-							</div>
-
-							<div class="mt-2 mb-2">
-								<button class="btn outline-primary" type="button">
-									Primary
-								</button>
-								<button class="btn outline-success" type="button">
-									Success
-								</button>
-								<button class="btn outline-warning" type="button">
-									Warning
-								</button>
-								<button class="btn outline-danger" type="button">Danger</button>
-							</div>
-
-							<div class="mt-2 mb-2">
-								<button class="btn btn-icon bg-success">+</button>
-							</div>
-
-							<div class="mt-3 mb-2">
-								<h5 class="mt-3 mb-3">@Links</h5>
-								<a class="f-primary" href="#">Primary link </a>
-								<a class="f-success" href="#">Secondary link </a>
-								<a class="f-warning" href="#">Warning link </a>
-								<a class="f-danger" href="#">Success link </a>
-							</div>
-						</div>
-						<div class="comp__info">
-							<p>
-								The Avatar component is used to represent a user, and displays
-								the profile picture. <br />To use avator add class to image:
-							</p>
-							<ul class="list-bullet">
-								<li>
-									Standered Button: <code>btn</code> and
-									<code>bg-primary</code> and so on..
-								</li>
-								<li>
-									Outline Button: <code>btn</code> and
-									<code
-										>outline-primary, outline-success ,outline-warning
-										,outline-danger
-									</code>
-								</li>
-								<li>
-									Floating Button: <code>btn btn-icon</code> and bg color
-									properties
-								</li>
-								<li>
-									Link: To give color,
-									<code>f-primary, f-success, f-warning, f-danger</code> Learn more about colors <a class="f-primary" href="#colors">@colors</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!--Images-->
-				<section id="images" class="component">
-					<div class="section__header mb-2">
-						<h2>Images</h2>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
-							<img
-								class="img-fluid w50"
-								src="https://images.unsplash.com/photo-1610123598147-f632aa18b275?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
-								alt="image"
-							/>
-
-							<img
-								class="img-fluid thumbnail w25"
-								src="https://images.unsplash.com/photo-1610123598147-f632aa18b275?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
-								alt="image"
-							/>
-
-							<img
-								class="img-fluid rounded"
-								src="https://via.placeholder.com/200x200"
-								alt="image"
-							/>
-						</div>
-
-						<div class="comp__info">
-							<p>
-								Documentation and examples for opting images into responsive
-								behavior (so they never become larger than their parent
-								elements) and add lightweight styles to them—all via classes.
-								<br />Building Blocks:
-							</p>
-							<ul class="list-bullet">
-								<li>
-									Image made responsive by adding: <code>img-fluid</code>. It
-									will apply <var>max-width:100%</var> and
-									<var>height:auto</var>
-								</li>
-								<li>
-									You can give an image a rounded 5px border appearance.
-									<code>thumbnail</code>
-								</li>
-								<li>Make ian image rounded, using: <code>rounded</code></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!--List-->
-				<section id="list" class="component">
-					<div class="section__header mb-2">
-						<h3>List</h3>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
-							<ul class="mb-2">
-								<li>Standered List</li>
-								<li>Standered List</li>
-								<li>Standered List</li>
-							</ul>
-
-							<ul class="list-bullet mb-2">
-								<li>Bullet Point list</li>
-								<li>Bullet Point list</li>
-								<li>Bullet Point list</li>
-							</ul>
-
-							<ul class="list-decimal mb-2">
-								<li>Deciaml List</li>
-								<li>Deciaml List</li>
-								<li>Deciaml List</li>
-							</ul>
-						</div>
-
-						<div class="comp__info">
-							<p>
-								List are a flexible and powerful component for displaying a
-								series of content. <br />Building Blocks:
-							</p>
-							<ul class="list-bullet">
-								<li>Create bullet point list <code>list-bullet</code></li>
-								<li>Decimal leading list <code>list-decimal</code></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!--Input-->
-				<section id="input" class="component">
-					<div class="section__header mb-2">
-						<h3>Input</h3>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
-							<h5>Standered Input</h5>
-							<div class="form-group">
-								<input
-									class="form-field"
-									type="text"
-									placeholder="Input field"
-								/>
-							</div>
-
-							<h5>Label Input Suffix and Prefix</h5>
-
-							<div class="form-group">
-								<span>https://</span>
-								<input
-									class="form-field"
-									type="text"
-									placeholder="domain.tld"
-								/>
-							</div>
-
-							<div class="form-group">
-								<input class="form-field" type="email" placeholder="Email" />
-								<span>@gmail.com</span>
-							</div>
-						</div>
-						<div class="comp__info">
-							<h5>Examples</h5>
-
-							<small>Standered Input</small>
-							<br />
-							<textarea disabled rows="10" cols="50">
-								<div class="form-group">
-									<input class="form-field" type="text" placeholder="Input field">
-								</div>
-							</textarea
-							>
-							<br />
-							<small>Prefix Input</small>
-							<br />
-							<textarea disabled rows="10" cols="50">
-								<div class="form-group">
-									<span>https://</span>
-									<input class="form-field" type="text" placeholder="domain.tld">
-								</div>
-							</textarea
-							>
-							<br />
-							<small>Suffix Input</small>
-							<br />
-							<textarea disabled rows="10" cols="50">
-								<div class="form-group">
-									<input class="form-field" type="email" placeholder="Email">
-									<span>@gmail.com</span>
-								</div>
-							</textarea
-							>
-						</div>
-					</div>
-				</section>
-
-				<!--Avator-->
-				<section id="avator" class="component">
-					<div class="section__header">
-						<h3>Avator</h3>
-					</div>
-					<div class="section__body">
-						<div class="comp__example d-flex">
-							<div class="m-3 mb-1">
-								<img
-									class="avator__cl"
-									src="https://images.unsplash.com/photo-1615125946484-86dd0a2cdb18?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=864&q=80"
-								/>
-							</div>
-							<div class="m-3 mb-1">
-								<img
-									class="avator__sq"
-									src="https://images.unsplash.com/photo-1610913041987-697d55b11998?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-								/>
-							</div>
-							<br />
-							<div class="m-3 mb-1">
-								<img
-									class="avator__cl xz2"
-									src="https://images.unsplash.com/photo-1615125946484-86dd0a2cdb18?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=864&q=80"
-								/>
-							</div>
-						</div>
-						<div class="comp__info">
-							<p>
-								The Avatar component is used to represent a user, and displays
-								the profile picture. <br />To use avator add class to image:
-							</p>
-							<ul class="list-bullet">
-								<li>Circular Avator: <code>avator__cl</code></li>
-								<li>Square Avator: <code>avator__sq</code></li>
-								<li>Increase Size: <code>xz2</code></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!--Alert-->
-				<section id="alert" class="component">
-					<div class="section__header mb-2">
-						<h3>Alert</h3>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
-							<div class="alert alert-primary mb-2 w60">This is Primary Alert</div>
-							<div class="alert alert-success mb-2 w60">This is Success Alert</div>
-							<div class="alert alert-warning mb-2 w60">This is Warning Alert</div>
-							<div class="alert alert-danger mb-2 w60">This is Primary Alert</div>
-						</div>
-						<div class="comp__info">
-							<p>
-								Provide contextual feedback messages for typical user actions
-								with the handful of available and flexible alert messages.
-								<br />To Create Alert add class:
-							</p>
-							<ul class="list-bullet">
-								<li>
-									Primary Alert: <code>alert</code> <code>alert-primary</code>
-								</li>
-								<li>
-									Success Alert: <code>alert</code> <code>alert-success</code>
-								</li>
-								<li>
-									Warning Alert: <code>alert</code> <code>alert-warning</code>
-								</li>
-								<li>
-									Danger Alert: <code>alert</code> <code>alert-danger</code>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!--Start Badge-->
-				<section id="badge" class="component">
-					<div class="section__header mb-2">
-						<h3>Badge</h3>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
-							<h5 class="mt-2 mb-2">Icons</h5>
-							<div class="badge__icon">
-								<img src="/images/notification.svg" />
-								<span class="badge__count">21</span>
-							</div>
-
-							<div class="d-flex">
-								<div class="badge__icon">
-									<img src="/images/message.svg" />
-									<span class="badge__count bg-primary">12</span>
-								</div>
-								<div class="badge__icon">
-									<img src="/images/message.svg" />
-									<span class="badge__count bg-success">12</span>
-								</div>
-								<div class="badge__icon">
-									<img src="/images/message.svg" />
-									<span class="badge__count bg-danger">12</span>
-								</div>
-								<div class="badge__icon">
-									<img src="/images/message.svg" />
-									<span class="badge__count bg-warning">12</span>
-								</div>
-							</div>
-							<h5 class="mt-2 mb-2">Avator</h5>
-							<div class="badge__icon">
-								<img
-									class="avator__cl"
-									src="https://images.unsplash.com/photo-1615125946484-86dd0a2cdb18?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=864&q=80"
-								/>
-								<span class="badge__count bg-primary">12</span>
-							</div>
-						</div>
-						<div class="comp__info">
-							<p>
-								Documentation and examples for badges, our small count and
-								labeling component.
-								<br />To Create Icon Bade add class:
-							</p>
-							<p>
-								For Icons: Naste icon image or svg inside <code>div</code> with
-								class <code>badge__icon</code>.<br />
-								Add <code>span</code> with class <code>badge__count</code>. For
-								colors check <b class="f-primary">Colors</b>
-							</p>
-							<br />
-						</div>
-					</div>
-				</section>
-
-				<!--Start Card-->
-				<section id="card" class="component">
-					<div class="section__header mb-2">
-						<h3>Card</h3>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
-							<!--Card header-->
-							<div class="card">
-								<div class="card__header">Features</div>
-								<ul class="list-group">
-									<li>Cuctomizable</li>
-									<li>Light Weight</li>
-									<li>Easy to use</li>
-								</ul>
+					<!--Button-->
+					<section id="button" class="component">
+						<div class="h2 section__heading">Button</div>
+						<div class="section__body">
+							<div class="body__example mt-2 mb-2">
+								<h5>@Solid Button</h5>
+								<button class="btn btn-primary">Primary</button>
+								<button class="btn btn-primary lg">Primary</button>
+								<button class="btn btn-primary xl">Primary</button>
 							</div>
 							
-							<div class="mt-3 mb-3"></div>
-							<div class="card card__shadow">
-								<img
-									class="card__img"
-									alt="card image"
-									src="https://images.unsplash.com/photo-1615731439720-47878ecc1ac6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
-								/>
+							<div class="body__example  mt-2 mb-2">
+								<h5>@Outline Button</h5>
+								<button class="btn btn-secondary">Secondary</button>
+								<button class="btn btn-secondary lg">Secondary</button>
+								<button class="btn btn-secondary xl">Secondary</button>
+							</div>
 
-								<div class="card__body">
-									<div class="card__title">Card Title</div>
-									<div class="card__subtitle">Subtitle</div>
-									<p>
-										Some quick example text to build on the card title and make
-										up the bulk of the card's content.
-									</p>
-								</div>
-								<div class="card__footer">This is Card Footer</div>
+							<div class="body__info">
+<pre class="code__container"><code class="html">
+	/* Primary Button */
+	&lt;button class="btn btn-primary"&gt;Primary</button>
+	&lt;button class="btn btn-primary lg"&gt;Primary&lt;/button>
+	&lt;button class="btn btn-primary xl"&gt;Primary&lt;/button>
+
+</code></pre>
+<pre class="code__container mt-2"><code class="html">
+	/* Secondary Button */
+	&lt;button class="btn btn-secondary">Secondary&lt;/button>
+	&lt;button class="btn btn-secondary lg">Secondary&lt;/button>
+	&lt;button class="btn btn-secondary xl">Secondary&lt;/button>
+
+</code></pre>							
 							</div>
 						</div>
-						<div class="comp__info mt-3">
-							<p>
-								A card is a flexible and extensible content container. It
-								includes options for headers and footers, a wide variety of
-								content, <br />Building Blocks:
-							</p>
-							<ul class="list-bullet">
-								<li>Card building block, Add class: <code>card</code></li>
-								<li>
-									Card header & footer: Add an optional header and/or footer
-									within a card <code>card__header</code>
-									<code>card__footer</code>
-								</li>
-								<li>
-									Card Body: Use it whenever you need a padded section within a
-									card. <code>card__body</code> and bg color properties
-								</li>
-								<li>
-									Card title and subtitle: <code>card__title</code> &
-									<code>card__subtitle</code>
-								</li>
-								<li>
-									Card image: Places an image to the card, width same as card
-									width. <code>card__img</code>
-								</li>
-								<li>
-									Card Shadow: Add shadow to card <code>card__shadow</code>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
+					</section>
 
-				<!--Navigation-->
-				<section id="navigation" class="component">
-					<div class="section__header mb-2">
-						<h3>Navigation</h3>
-					</div>
-					<div class="section__body">
-						<div class="comp__example">
+					<!--Images-->
+					<section id="images" class="component">
+						<div class="h2 section__heading">Image</div>
+						<div class="section__body">
+							<div class="body__example mt-2">
+								<h5 class="mb-2">@Thumbnail Image</h5>
+								<img class="thumbnail" src="https://via.placeholder.com/200" alt="placeholder">
+
+								<h5 class="mt-2 mb-2">@Rounded Image</h5>
+								<img class="rounded" src="https://via.placeholder.com/200" alt="placeholder">
+
+								<h5 class="mt-2 mb-2">@Responsive Image</h5>
+								<img class="img-fluid" src="https://via.placeholder.com/700x300" alt="placeholder">
+							</div>
+							<div class="body__info">
+								<p>Documentation and examples for opting images into responsive
+									behavior (so they never become larger than their parent
+									elements) and add lightweight styles to them—all via classes.</p>
+								<p>To give image small border radius: <code>.thumbnail</code></p>
+								<p>Make image rounded: <code>.rounded</code></p>
+								<p>Make image responsive using: <code>.img-fluid</code></p>
+
+<pre class="code__container"><code class="html">
+	//Thumbnail Image
+	&lt;img class="thumbnail" src="https://via.placeholder.com/200" alt="placeholder"&gt;
+
+	//Rounded Image
+	&lt;img class="rounded" src="https://via.placeholder.com/200" alt="placeholder"&gt;
+
+	//Responsive Image
+	&lt;img class="img-fluid" src="https://via.placeholder.com/700x300" alt="placeholder"&gt;
+
+</code></pre>
+							</div>
+						</div>
+					</section>
+
+					<!--List-->
+					<section id="list" class="component">
+						<div class="h2 section__heading">List</div>
+						<div class="section__body">
+							<div class="body__info">
+								<p>
+									List are a flexible and powerful component for displaying a
+									series of content.
+								</p>
+							</div>
+							<div class="body__example">
+								<h5 class="mt-2 mb-2">@Simple List</h5>
+								<ul class="simple-list">
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+								</ul>
+							</div>
+							<div class="body__example">
+								<h5 class="mt-2 mb-2">@Bullet Points List</h5>
+								<ul class="list-bullet ml-2">
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+								</ul>
+
+								<h5 class="mt-2 mb-2">@Deciaml List</h5>
+								<ul class="list-decimal ml-2">
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+									<li>Lorem ipsum dolor sit amet, consectetur</li>
+								</ul>
+							</div>
+							<div class="body__info">
+<pre class="code__container mt-2"><code class="html">
+	// Simple list
+	&lt;ul class="simple-list"&gt;
+		&lt;li&gt;Lorem ipsum dolor sit amet, consectetur&lt;/li&gt;
+	&lt;/ul&gt;
+	// Bullet Point List
+	&lt;ul class="list-bullet ml-2"&gt;
+		&lt;li&gt;Lorem ipsum dolor sit amet, consectetur&lt;/li&gt;
+	&lt;/ul&gt;
+	// Deciaml List
+	&lt;ul class="list-decimal ml-2"&gt;
+		&lt;li&gt;Lorem ipsum dolor sit amet, consectetur&lt;/li&gt;
+	&lt;/ul&gt;
+
+</code></pre>
+							</div>
+						</div>
+					</section>
+
+					<!--Input-->
+					<section id="input" class="component">
+						<div class="h2 section__heading">Input</div>
+						<div class="body__info">
+							<p>Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.</p>
+						</div>
+						<div class="body__example">
+							<form>
+								<div class="styled-input">
+									<input type="text" placeholder="Name" required>
+									<span></span>
+								</div>
+								<div class="styled-input">
+									<input type="email" placeholder="Email" required>
+									<span></span>
+								</div>
+							</form>
+						</div>
+						<div class="body__info mt-3">
+
+<pre class="code__container"><code class="html">
+	&lt;form&gt;
+		&lt;div class="styled-input"&gt;
+			&lt;input type="text" placeholder="Name" required&gt;
+			&lt;span&gt;&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="styled-input"&gt;
+			&lt;input type="email" placeholder="Email" required&gt;
+			&lt;span&gt;&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;
+	
+</code></pre>
+						</div>
+					</section>
+
+					<!--avator-->
+					<section id="avatar" class="component">
+						<div class="h2 section__heading">Avatar</div>
+						<div class="body__info">
+							<p>In computing, an avatar (also known as a profile picture or userpic) is a graphical representation of a user or the user's character or persona.</p>
+						</div>
+						<div class="body__example mt-2 mb-2">
+							<div class="d-flex flex-align-center flex-wrap">
+								<img class="avatar avatar-sm m-2" src="images/avator-img.jpg" alt="avator">
+								<img class="avatar avatar-md m-2" src="images/avator-img.jpg" alt="avator">
+								<img class="avatar avatar-lg m-2" src="images/avator-img.jpg" alt="avator">
+								<img class="avatar avatar-xl m-2" src="images/avator-img.jpg" alt="avator">
+							</div>
+						</div>
+						<div class="body__info">
+<pre class="code__container"><code class="html">
+	// small sm
+	&lt;img class="avatar avatar-sm" src="images/avator-img.jpg" alt="avator"&gt;
+
+	// medium md
+	&lt;img class="avatar avatar-md" src="images/avator-img.jpg" alt="avator"&gt;
+
+	// large lg
+	&lt;img class="avatar avatar-lg" src="images/avator-img.jpg" alt="avator"&gt;
+
+	// extra large xl
+	&lt;img class="avatar avatar-xl" src="images/avator-img.jpg" alt="avator"&gt;
+
+</code></pre>
+						</div>
+					</section>
+
+					<!--alert-->
+					<section id="alert" class="component">
+						<div class="h2 section__heading">Alert</div>
+						<div class="body__info">
+							<p>Alerts are used to communicate a state that affects a system, feature or page</p>
+						</div>
+						<div class="body__example">
+							<div class="alert alert-primary mt-2">
+								<img class="alert-icon" src="images/alert-primary.svg">
+								This is priamry alert - check it out.
+							</div>
+
+							<div class="alert alert-success mt-2">
+								<img class="alert-icon" src="images/alert-check.svg">
+								This is success alert - check it out.
+							</div>
+
+							<div class="alert alert-warning mt-2">
+								<img class="alert-icon" src="images/alert-warning.svg">
+								This is warning alert - check it out.
+							</div>
+
+							<div class="alert alert-danger mt-2">
+								<img class="alert-icon" src="images/alert-danger.svg">
+								This is faliure alert - check it out.
+							</div>
+						</div>
+						<div class="boyd__info mt-2 mb-2">
+<pre class="code__container"><code class="html">
+	// primary or info alert
+	&lt;div class="alert alert-primary"&gt;
+		&lt;img class="alert-icon" src="images/alert-primary.svg"&gt;
+		This is priamry alert - check it out.
+	&lt;/div&gt;
+	
+	// success alert
+	&lt;div class="alert alert-success"&gt;
+		&lt;img class="alert-icon" src="images/alert-check.svg"&gt;
+		This is success alert - check it out.
+	&lt;/div&gt;
+
+	// warning alert
+	&lt;div class="alert alert-warning"&gt;
+		&lt;img class="alert-icon" src="images/alert-warning.svg"&gt;
+		This is warning alert - check it out.
+	&lt;/div&gt;
+
+	// faliure alert
+	&lt;div class="alert alert-danger"&gt;
+		&lt;img class="alert-icon" src="images/alert-danger.svg"&gt;
+		This is faliure alert - check it out.
+	&lt;/div&gt;
+
+</code></pre>
+						</div>
+					</section>
+
+					<!--badge-->
+					<section id="badge" class="component">
+						<div class="h2 section__heading">Badge</div>
+						<div class="body__info">
+							<p>Badges are used to highlight an item's status for quick recognition.</p>
+						</div>
+						<div class="body__example mt-2 mb-2">
+							<h5>@Badge on Avatar</h5>
+							<div class="d-flex flex-wrap">
+								<div class="badge-av m-2">
+									<img class="badge-img" src="images/avatar-person.jpg" alt="person">
+									<span class="status status-active"></span>
+								</div>
+	
+								<div class="badge-av m-2">
+									<img class="badge-img" src="images/avator-img.jpg" alt="person">
+									<span class="status status-warning"></span>
+								</div>
+	
+								<div class="badge-av m-2">
+									<img class="badge-img" src="images/avatar-person2.jpg" alt="person">
+									<span class="status status-offline"></span>
+								</div>
+							</div>
+						</div>
+						<div class="body__info">
+<pre class="code__container"><code class="html">
+	// Active avatar badge
+	&lt;div class="badge-av"&gt;
+		&lt;img class="badge-img" src="images/avatar-person.jpg" alt="person"&gt;
+		&lt;span class="status status-active"&gt;&lt;/span&gt;
+	&lt;/div&gt;
+
+	// Idl avatar badge
+	&lt;div class="badge-av"&gt;
+		&lt;img class="badge-img" src="images/avator-img.jpg" alt="person"&gt;
+		&lt;span class="status status-warning"&gt;&lt;/span&gt;
+	&lt;/div&gt;
+
+	// Offline avatar badge
+	&lt;div class="badge-av"&gt;
+		&lt;img class="badge-img" src="images/avatar-person2.jpg" alt="person"&gt;
+		&lt;span class="status status-offline"&gt;&lt;/span&gt;
+	&lt;/div&gt;
+
+</code></pre>
+					
+						</div>
+						<div class="body__example mt-2 mb-2">
+							<h5>@Icons Badge</h5>
+							<div class="body__example mt-2 mb-2">
+								<div class="d-flex">
+									<div class="badge-icon m-2">
+										<img class="badge-ic" src="images/icon-bell.svg" alt="icon">
+										<span class="label">8</span>
+									</div>
+									<div class="badge-icon m-2">
+										<img class="badge-ic" src="images/icon-cart.svg" alt="icon">
+										<span class="label">3</span>
+									</div>
+								</div>
+							</div>
+							<div class="body__info">
+<pre class="code__container"><code class="html">
+	&lt;div class="badge-icon"&gt;
+		&lt;img class="badge-ic" src="images/icon-bell.svg" alt="icon"&gt;
+		&lt;span class="label label-bell"&gt;3&lt;/span&gt;
+	&lt;/div&gt;
+
+	&lt;div class="badge-icon"&gt;
+		&lt;img class="badge-ic" src="images/icon-cart.svg" alt="icon"&gt;
+		&lt;span class="label label-cart"&gt;3&lt;/span&gt;
+	&lt;/div&gt;
+
+</code></pre>
+							</div>
+						</div>
+					</section>
+					
+					<!--card-->
+					<section id="card" class="component">
+						<div class="h2 section__heading">Card</div>
+						<div class="body__info">
+							<p>Used to display information to users, with button to trigger actions. These are very versatile and often found in eCommerce websites and blogs.</p>
+						</div>
+						<div class="body__example mb-2">
+							<h5 class="mt-3 mb-3">@Blog Card with image</h5>
+							<div class="card">
+								<img class="card-img" loading="lazy" src="images/card-header.jpg" alt="card">
+								<div class="card-body">
+									<div class="card-title">Card Title</div>
+									<div class="card-subtitle">Card Subtitle</div>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta praesentium quam temporibus enim quae!</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-primary">Read more</button>
+								</div>
+							</div>
+								
+							<h5 class="mt-3 mb-3">@Card with text only</h5>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title">Card Title</div>
+									<div class="card-subtitle">Card Subtitle</div>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eligendi vitae aut? Quidem praesentium eius molestiae. Cumque facere neque necessitatibus, sit suscipit praesentium. Rerum odit, quisquam iusto placeat ad ab.</p>
+								</div>
+								<div class="card-footer">
+									<button class="btn btn-primary">Read more</button>
+								</div>
+							</div>
+						</div>
+						<div class="body__info">
+<pre class="code__container"><code class="html">
+	// Blog card with image
+	&lt;div class="card"&gt;
+		&lt;img class="card-img" loading="lazy" src="images/card-header.jpg" alt="card"&gt;
+		&lt;div class="card-body"&gt;
+			&lt;div class="card-title"&gt;Card Title&lt;/div&gt;
+			&lt;div class="card-subtitle"&gt;Card Subtitle&lt;/div&gt;
+			&lt;p class="card-text"&gt;Lorem ipsum dolor sit amet 
+				consectetur adipisicing elit. Repellendus dicta 
+				praesentium quam temporibus enim quae!&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="card-footer"&gt;
+			&lt;button class="btn btn-primary"&gt;Read more&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	// Card with only text
+	&lt;div class="card"&gt;
+		&lt;div class="card-body"&gt;
+			&lt;div class="card-title"&gt;Card Title&lt;/div&gt;
+			&lt;div class="card-subtitle"&gt;Card Subtitle&lt;/div&gt;
+			&lt;p class="card-text"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Aliquam eligendi vitae aut? Quidem praesentium eius molestiae. 
+				Cumque facere neque necessitatibus, sit suscipit praesentium. 
+				Rerum odit, quisquam iusto placeat ad ab.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="card-footer"&gt;
+			&lt;button class="btn btn-primary"&gt;Read more&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+</code></pre>
+						</div>
+					</section>
+
+					<!--navigation-->
+					<section id="navigation" class="component">
+						<div class="h2 section__heading">Navigation</div>
+
+						<div class="body__example mt-2 mb-2">
+							<h5 class="mt-2 mb-2">@Simple Navigation</h5>
 							<nav class="navbar">
 								<div class="navbar-brand">Brand</div>
-								<ul class="navbar-items">
-									<li class="nav-route"><a href="#">Home</a></li>
-									<li class="nav-route"><a href="#">About</a></li>
-									<li class="nav-route"><a href="#">Contact</a></li>
+								<ul class="nav-items">
+									<li><a href="#" class="nav-link">Home</a></li>
+									<li><a href="#" class="nav-link">Blog</a></li>
+									<li><a href="#" class="nav-link">Contact</a></li>
 								</ul>
 							</nav>
+
+							<h5 class="mt-3 mb-3">@Navigation with Button</h5>
+
+							<nav class="navbar">
+								<div class="navbar-brand">Brand</div>
+								<ul class="nav-items">
+									<li><a href="#" class="nav-link">Home</a></li>
+									<li><a href="#" class="nav-link">Blog</a></li>
+									<li><a href="#" class="nav-link">Collection</a></li>
+								</ul>
+								<button class="btn btn-primary">Download</button>
+							</nav>
 						</div>
-						<div class="comp__info mt-3">
-							<p>
-								Responsive navigation header, the navbar. Includes support for
-								branding, navigation. <br />Building Blocks:
-							</p>
-							<ul class="list-bullet">
-								<li>
-									Navigation require <code>navbar</code>, which is flex
-									component.
-								</li>
-								<li>
-									For branding or logo create div with class
-									<code>navbar-brand</code>
-								</li>
-								<li>
-									Create list with class to ul <code>navbar-items</code>. Add
-									<code>nav-route</code> to sublist items, i.e to
-									<pre>li</pre>
-								</li>
-							</ul>
+						<div class="body__info">
+<pre class="code__container"><code class="html">
+	// Simple Navigation
+	&lt;nav class="navbar"&gt;
+		&lt;div class="navbar-brand"&gt;Brand&lt;/div&gt;
+		&lt;ul class="nav-items"&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+
+	// Navigation with Button
+	&lt;nav class="navbar"&gt;
+		&lt;div class="navbar-brand"&gt;Brand&lt;/div&gt;
+		&lt;ul class="nav-items"&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" class="nav-link"&gt;Collection&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;button class="btn btn-primary"&gt;Download&lt;/button&gt;
+	&lt;/nav&gt;
+
+</code></pre>
 						</div>
-					</div>
-				</section>
-			</main>
+					</section>
+
+					<!--modal-->
+					<section id="modal" class="component">
+						<div class="h2 section__heading">
+							Modal
+						</div>
+						<div class="body__info mt-2 mb-2">
+							A modal is a dialog box/popup window that is displayed on top of the current page. It's commonly used for confirmation boxes. Forms should not be put in modals.
+						</div>
+						<div class="body__example mt-2 mb-2">
+							<div class="modal">
+								<div class="modal-title">Hurry Up!!</div>
+								<div class="modal-body">
+									<p>We are having Flash sale ⚡!</p>
+									<p>Get your favourite items <span class="f-warning">@discount!</span></p>
+								</div>
+								<button class="btn btn-secondary">Start Shopping</button>
+								<img class="close-btn" src="images/icon-close.svg" alt="close">
+							</div>
+						</div>
+
+						<div class="body__info mt-4">
+<pre class="code__container"><code class="html">
+	&lt;div class="modal"&gt;
+		&lt;div class="modal-title"&gt;Hurry Up!!&lt;/div&gt;
+		&lt;div class="modal-body"&gt;
+			&lt;p&gt;We are having Flash sale ⚡!&lt;/p&gt;
+			&lt;p&gt;Get your favourite items &lt;span class="f-warning"&gt;@discount!&lt;/span&gt;&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;button class="btn btn-secondary"&gt;Start Shopping&lt;/button&gt;
+		&lt;img class="close-btn" src="images/icon-close.svg" alt="close"&gt;
+	&lt;/div&gt;
+
+</code></pre>
+						</div>
+					</section>
+					<footer id="about" class="component">
+						<div class="about__body">
+							<div class="about__lead">Design & Develop by <a class="f-info font-bold" href="https://vaishnavs.netlify.app">Vaishnav</a></div>
+							<div>
+								<a href="https://github.com/vaishnavme/IcyUi"><img src="images/icon-github.svg"></a>
+								<a href="https://twitter.com/vaishnavs0"><img src="images/icon-twitter.svg"></a>
+							</div>
+						</div>
+					</footer>
+				</main>
+			</div>
 		</section>
 
-		<script src="js/app.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+		<script src="/js/app.js"></script>
+		<script>
+			hljs.highlightAll();
+		</script>
 	</body>
 </html>
